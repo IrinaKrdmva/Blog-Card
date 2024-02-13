@@ -1,0 +1,129 @@
+/*=============== GOOGLE FONTS ===============*/
+
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+
+:root {
+  /*========== FONT WEIGHT ==========*/
+
+  --font-semibold: 600;
+  --font-extrabold: 800;
+
+  /*========== COLORS ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --primary-yellow: hsl(47, 88%, 63%);
+  --secondary-white: hsl(0, 0%, 100%);
+  --secondary-grey: hsl(0, 0%, 50%);
+  --secondary-black: hsl(0, 0%, 7%);
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 375px;
+  max-width: 1440px;
+  font-family: "Figtree", sans-serif;
+  background-color: var(--primary-yellow);
+  font-size: 14px;
+  display: grid;
+  place-content: center;
+  min-block-size: 100vh;
+}
+
+a {
+  color: var(--secondary-black);
+  text-decoration: none;
+}
+
+main {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 20rem;
+  height: auto;
+  background-color: var(--secondary-white);
+  border: 1px solid black;
+  border-radius: 0.9rem;
+  box-shadow: 0.5rem 0.5rem 0 var(--secondary-black);
+  margin: 5rem;
+  padding: 1.2rem;
+}
+
+.card-img {
+  border-radius: 0.75rem;
+  width: 17.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.card-stat {
+  background-color: var(--primary-yellow);
+  border-radius: 0.2rem;
+  border: none;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.6rem;
+  font-weight: var(--font-extrabold);
+  margin-bottom: 0.8rem;
+}
+
+.card-date {
+  font-size: 0.75rem;
+  margin-bottom: 0.8rem;
+  font-weight: var(--font-semibold);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  font-weight: var(--font-extrabold);
+}
+
+.card-title a:hover,
+.card-title a:focus {
+  color: var(--primary-yellow);
+}
+
+.card-text {
+  font-size: 0.85rem;
+  color: var(--secondary-grey);
+  margin-bottom: 0.8rem;
+}
+
+.avatar {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.avatar-img {
+  width: 1.8rem;
+}
+
+.avatar-name {
+  font-size: smaller;
+  font-weight: var(--font-extrabold);
+  margin-top: 0.55rem;
+}
+
+/*============= FOOTER ==============*/
+
+.attribution {
+  margin: 1rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
